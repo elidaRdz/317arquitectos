@@ -1,10 +1,13 @@
 import React from 'react';
+import './Portafolio.css'; 
+import { Carousel } from '../components/Carousel';
+import { slides } from "../data/carouselData.json"
 
 const Portafolio = () => {
   return (
-    <div>
+    <div className="portafolio-container">
       <h1>Portafolio</h1>
-      <p>Clientes principales.</p>
+      <Carousel data={slides}/>
     </div>
   );
 };

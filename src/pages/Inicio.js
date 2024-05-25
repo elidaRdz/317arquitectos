@@ -1,10 +1,11 @@
 import React from 'react';
+import './Inicio.css'; 
 
 const Inicio = () => {
   return (
-    <div>
+    <div className="inicio-container">
       <h1>Inicio</h1>
-      <p>Resumen de todas las páginas.</p>
+      <p>317 arquitectos.</p>
     </div>
   );
 };

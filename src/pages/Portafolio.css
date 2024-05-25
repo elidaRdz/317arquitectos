@@ -1,0 +1,16 @@
+.portafolio-container {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(34, 30, 30);
+    z-index: -2; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.portafolio-container h1 {
+    margin-bottom: 2rem;
+    color: white;
+}
