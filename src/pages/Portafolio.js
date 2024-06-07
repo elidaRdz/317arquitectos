@@ -15,6 +15,7 @@ const Portafolio = () => {
     <div className="portafolio-container">
       <h1>Portafolio</h1>
       <Carousel images={images} />
+      <br></br>
     </div>
   );
 };

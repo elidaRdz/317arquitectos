@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+  
+.nosotros-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.nosotros-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+  
+.historia {
+    margin-bottom: 40px;
+}
+  
+.historia h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.historia p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+  
+.empleados {
+    margin-bottom: 40px;
+}
+  
+.empleados h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.empleados-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.empleado {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+  
+.empleado img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.empleado img:hover {
+    transform: scale(1.5);
+}
+  
+.empleado h3 {
+    font-size: 1.25rem;
+    margin: 10px 0 5px;
+}
+  
+.empleado p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+  
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+  
+.mision, .vision {
+    width: 45%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+  
+.mision h2, .vision h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.mision p, .vision p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+  
