@@ -2,44 +2,24 @@ import React, { useState } from 'react';
 import "../components/Carousel.css";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-export const Carousel = ({ data }) => {
-    const [slide, setSlide] = useState(0);
-
+const Carousel = ({ images }) => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+  
     const nextSlide = () => {
-        setSlide(slide === data.length - 1 ? 0 : slide + 1);
+      setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
     };
-
+  
     const prevSlide = () => {
-        setSlide(slide === 0 ? data.length - 1 : slide - 1);
+      setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
     };
-
+  
     return (
-        <div className="carousel-container">
-            <div className="carousel">
-                <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
-                {data.map((item, idx) => {
-                    return (
-                        <img src={item.src} alt={item.alt} key={idx} className={slide === idx ? "slide" : "slide slide-hidden"} />
-                    );
-                })}
-                <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} />
-                <span className="indicators">
-                    {data.map((_, idx) => {
-                        return (
-                            <button
-                                key={idx}
-                                onClick={() => setSlide(idx)}
-                                className={
-                                    slide === idx ? "indicator" : "indicator indicator-inactive"
-                                }
-                            ></button>
-                        );
-                    })}
-                </span>
-            </div>
-            <div className="description">
-                {data[slide].description}
-            </div>
-        </div>
+      <div className="carousel">
+      <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide} />
+        <img src={process.env.PUBLIC_URL + images[currentSlide]} alt={`Slide ${currentSlide}`} />
+        <BsArrowRightCircleFill className="arrow arrow-right" onClick={nextSlide} />
+      </div>
     );
 };
+  
+export default Carousel;
