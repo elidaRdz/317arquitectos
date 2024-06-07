@@ -12,7 +12,6 @@ const Article = ({ title, date, content }) => {
 };
 
 const Blog = () => {
-  // Estructura de datos para los artículos
   const articles = [
     {
       title: 'Artículo 1',
