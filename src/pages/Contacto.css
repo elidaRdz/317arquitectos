@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+  
+.contacto-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.contacto-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contacto-container p {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.3);
+}
+
+.contact-icons span {
+    font-size: 1.2rem;
+    margin:auto;
+}
+
+.contact-loc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-loc a {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.contact-loc img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.contact-loc a:hover {
+    transform: scale(1.3);
+}
+
+.contact-loc span {
+    font-size: 1.2rem;
+    margin:auto;
+}
