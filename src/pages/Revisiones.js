@@ -1,10 +1,11 @@
 import React from 'react';
+import './Revisiones.css';
 
 const Revisiones = () => {
   return (
-    <div>
+    <div className="revisiones-container">
       <h1>Revisiones</h1>
-      <p>3.</p>
+      <p>Contenido</p>
     </div>
   );
 };
